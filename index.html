@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Timer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <section>
+        <div class="setTime d-flex justify-content-center align-items-center">
+            <label for="time"> Set time: </label>
+            <input type="date" name="time" id="time" />
+            <button class="btn px-3 py-1 fw-bold" id="btnSet">SET</button>
+        </div>
+        <div class="counterContainer d-flex flex-column align-items-center">
+            <p class="fst-italic">
+                Time countdown until
+                <span id="countdown" class="fw-bold"> 01-01-2023</span> :
+            </p>
+            <div class="counterTime d-flex align-items-center">
+                <span class="counter" id="days">00</span>
+                <span>:</span>
+                <span class="counter" id="hours">00</span>
+                <span>:</span>
+                <span class="counter" id="minutes">00</span>
+                <span>:</span>
+                <span class="counter" id="seconds">00</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
